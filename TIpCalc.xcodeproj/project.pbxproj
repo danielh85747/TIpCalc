@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DA384E4534DE41A870E75FD /* Pods_TIpCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAF5DD7C2DB80294FE4521A /* Pods_TIpCalc.framework */; };
 		9D3035F41EAEBC3800577A01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3035F31EAEBC3800577A01 /* AppDelegate.swift */; };
 		9D3035F61EAEBC3800577A01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3035F51EAEBC3800577A01 /* ViewController.swift */; };
 		9D3035F91EAEBC3800577A01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3035F71EAEBC3800577A01 /* Main.storyboard */; };
 		9D3035FB1EAEBC3800577A01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3035FA1EAEBC3800577A01 /* Assets.xcassets */; };
 		9D3035FE1EAEBC3800577A01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3035FC1EAEBC3800577A01 /* LaunchScreen.storyboard */; };
+		9D3036061EAECB2C00577A01 /* calcBack.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9D3036051EAECB2C00577A01 /* calcBack.jpeg */; };
+		9D3036081EAEE37900577A01 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D3036071EAEE37900577A01 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EAF5DD7C2DB80294FE4521A /* Pods_TIpCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TIpCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C341F95654BE85FE4CB8A5E /* Pods-TIpCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIpCalc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TIpCalc/Pods-TIpCalc.debug.xcconfig"; sourceTree = "<group>"; };
 		9D3035F01EAEBC3800577A01 /* TIpCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TIpCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3035F31EAEBC3800577A01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D3035F51EAEBC3800577A01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,10 @@
 		9D3035FA1EAEBC3800577A01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D3035FD1EAEBC3800577A01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D3035FF1EAEBC3800577A01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D3036051EAECB2C00577A01 /* calcBack.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = calcBack.jpeg; sourceTree = "<group>"; };
+		9D3036071EAEE37900577A01 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9D3036091EAEF37300577A01 /* TIpCalcProvFile.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = TIpCalcProvFile.mobileprovision; sourceTree = "<group>"; };
+		B98BF1A43CE2EE36981F8CCA /* Pods-TIpCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIpCalc.release.xcconfig"; path = "Pods/Target Support Files/Pods-TIpCalc/Pods-TIpCalc.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +38,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DA384E4534DE41A870E75FD /* Pods_TIpCalc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05AB1BF6188E1045E1BD7CA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EAF5DD7C2DB80294FE4521A /* Pods_TIpCalc.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9D3035E71EAEBC3800577A01 = {
 			isa = PBXGroup;
 			children = (
 				9D3035F21EAEBC3800577A01 /* TIpCalc */,
 				9D3035F11EAEBC3800577A01 /* Products */,
+				DA41B61E9A1D845C64B85E31 /* Pods */,
+				05AB1BF6188E1045E1BD7CA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +74,26 @@
 		9D3035F21EAEBC3800577A01 /* TIpCalc */ = {
 			isa = PBXGroup;
 			children = (
+				9D3036091EAEF37300577A01 /* TIpCalcProvFile.mobileprovision */,
 				9D3035F31EAEBC3800577A01 /* AppDelegate.swift */,
 				9D3035F51EAEBC3800577A01 /* ViewController.swift */,
 				9D3035F71EAEBC3800577A01 /* Main.storyboard */,
 				9D3035FA1EAEBC3800577A01 /* Assets.xcassets */,
+				9D3036051EAECB2C00577A01 /* calcBack.jpeg */,
 				9D3035FC1EAEBC3800577A01 /* LaunchScreen.storyboard */,
 				9D3035FF1EAEBC3800577A01 /* Info.plist */,
+				9D3036071EAEE37900577A01 /* GoogleService-Info.plist */,
 			);
 			path = TIpCalc;
+			sourceTree = "<group>";
+		};
+		DA41B61E9A1D845C64B85E31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C341F95654BE85FE4CB8A5E /* Pods-TIpCalc.debug.xcconfig */,
+				B98BF1A43CE2EE36981F8CCA /* Pods-TIpCalc.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +103,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D3036021EAEBC3800577A01 /* Build configuration list for PBXNativeTarget "TIpCalc" */;
 			buildPhases = (
+				518A60FD40A269762A320415 /* [CP] Check Pods Manifest.lock */,
 				9D3035EC1EAEBC3800577A01 /* Sources */,
 				9D3035ED1EAEBC3800577A01 /* Frameworks */,
 				9D3035EE1EAEBC3800577A01 /* Resources */,
+				13D62CDAF1BE16C0846AEF7E /* [CP] Embed Pods Frameworks */,
+				188F18CF3A39238974964EC5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,12 +160,62 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D3035FE1EAEBC3800577A01 /* LaunchScreen.storyboard in Resources */,
+				9D3036061EAECB2C00577A01 /* calcBack.jpeg in Resources */,
+				9D3036081EAEE37900577A01 /* GoogleService-Info.plist in Resources */,
 				9D3035FB1EAEBC3800577A01 /* Assets.xcassets in Resources */,
 				9D3035F91EAEBC3800577A01 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13D62CDAF1BE16C0846AEF7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TIpCalc/Pods-TIpCalc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		188F18CF3A39238974964EC5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TIpCalc/Pods-TIpCalc-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		518A60FD40A269762A320415 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D3035EC1EAEBC3800577A01 /* Sources */ = {
@@ -261,12 +346,13 @@
 		};
 		9D3036031EAEBC3800577A01 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C341F95654BE85FE4CB8A5E /* Pods-TIpCalc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 63TQM7UJ49;
 				INFOPLIST_FILE = TIpCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zilk.TIpCalc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zilk.TIpCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -274,12 +360,13 @@
 		};
 		9D3036041EAEBC3800577A01 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B98BF1A43CE2EE36981F8CCA /* Pods-TIpCalc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 63TQM7UJ49;
 				INFOPLIST_FILE = TIpCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zilk.TIpCalc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zilk.TIpCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -304,6 +391,7 @@
 				9D3036041EAEBC3800577A01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

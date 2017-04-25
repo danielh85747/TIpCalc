@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TIpCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,133 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calcBack.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="6Ww-eT-mdv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HU7-Ac-TLL">
+                                <rect key="frame" x="16" y="105" width="343" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="GCP-te-huh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangHK-Light" family="PingFang HK" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bqB-SQ-kuf">
+                                <rect key="frame" x="16" y="166" width="343" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="r7G-IA-faN"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Light" family="PingFang HK" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="VLf-zq-yeR"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Percentage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLx-1a-PnV">
+                                <rect key="frame" x="16" y="219" width="343" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="pUe-84-VBz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangHK-Light" family="PingFang HK" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QEO-oF-VWa">
+                                <rect key="frame" x="16" y="280" width="343" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="DIv-ab-cLw"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Light" family="PingFang HK" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="s5d-gA-26c"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIg-AY-HgI">
+                                <rect key="frame" x="16" y="333" width="343" height="36"/>
+                                <color key="backgroundColor" red="0.01288627982629994" green="0.00017476999556808654" blue="0.11496113989637302" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Light" family="PingFang HK" pointSize="17"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tipPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LVJ-wP-uK0"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EQ0-54-0t4">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="TipCalc" id="1Tp-Hl-pNH"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKI-g9-DZv">
+                                <rect key="frame" x="16" y="377" width="343" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="MpL-YT-4VS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangHK-Light" family="PingFang HK" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PMm-AC-o9B" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="609" width="375" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xKI-g9-DZv" firstAttribute="top" secondItem="HIg-AY-HgI" secondAttribute="bottom" constant="8" symbolic="YES" id="2Iu-vL-vlm"/>
+                            <constraint firstItem="QEO-oF-VWa" firstAttribute="top" secondItem="vLx-1a-PnV" secondAttribute="bottom" constant="8" symbolic="YES" id="3Rp-0L-eyF"/>
+                            <constraint firstItem="PMm-AC-o9B" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="609" id="4tA-s1-8nW"/>
+                            <constraint firstItem="EQ0-54-0t4" firstAttribute="leading" secondItem="6Ww-eT-mdv" secondAttribute="leading" id="5Bf-lB-Qk8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6Ww-eT-mdv" secondAttribute="bottom" id="5yU-Rj-xCm"/>
+                            <constraint firstItem="6Ww-eT-mdv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6VM-Ar-DQC"/>
+                            <constraint firstItem="EQ0-54-0t4" firstAttribute="trailing" secondItem="6Ww-eT-mdv" secondAttribute="trailing" id="81C-3U-5hr"/>
+                            <constraint firstItem="HIg-AY-HgI" firstAttribute="top" secondItem="QEO-oF-VWa" secondAttribute="bottom" constant="8" symbolic="YES" id="CbJ-Hq-F2v"/>
+                            <constraint firstItem="bqB-SQ-kuf" firstAttribute="trailing" secondItem="HU7-Ac-TLL" secondAttribute="trailing" id="D3Y-tV-zfO"/>
+                            <constraint firstItem="6Ww-eT-mdv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FBE-o1-gkX"/>
+                            <constraint firstItem="HU7-Ac-TLL" firstAttribute="top" secondItem="EQ0-54-0t4" secondAttribute="bottom" constant="41" id="FW0-UY-H8l"/>
+                            <constraint firstItem="PMm-AC-o9B" firstAttribute="trailing" secondItem="EQ0-54-0t4" secondAttribute="trailing" id="Fma-kS-RE0"/>
+                            <constraint firstItem="bqB-SQ-kuf" firstAttribute="leading" secondItem="vLx-1a-PnV" secondAttribute="leading" id="H2x-FH-G47"/>
+                            <constraint firstItem="PMm-AC-o9B" firstAttribute="leading" secondItem="EQ0-54-0t4" secondAttribute="leading" id="JuO-3f-XOT"/>
+                            <constraint firstItem="EQ0-54-0t4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Mlh-Bw-qFn"/>
+                            <constraint firstItem="bqB-SQ-kuf" firstAttribute="top" secondItem="HU7-Ac-TLL" secondAttribute="bottom" constant="8" symbolic="YES" id="N6h-sx-Qre"/>
+                            <constraint firstItem="QEO-oF-VWa" firstAttribute="trailing" secondItem="vLx-1a-PnV" secondAttribute="trailing" id="Nft-kh-UGk"/>
+                            <constraint firstItem="xKI-g9-DZv" firstAttribute="leading" secondItem="HIg-AY-HgI" secondAttribute="leading" id="PYj-Jp-sgf"/>
+                            <constraint firstItem="HU7-Ac-TLL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Xwo-Et-Zm9"/>
+                            <constraint firstItem="HIg-AY-HgI" firstAttribute="leading" secondItem="QEO-oF-VWa" secondAttribute="leading" id="Ymo-bh-aSA"/>
+                            <constraint firstItem="xKI-g9-DZv" firstAttribute="trailing" secondItem="HIg-AY-HgI" secondAttribute="trailing" id="cWa-Oi-yGn"/>
+                            <constraint firstItem="bqB-SQ-kuf" firstAttribute="trailing" secondItem="vLx-1a-PnV" secondAttribute="trailing" id="cqB-bI-649"/>
+                            <constraint firstItem="EQ0-54-0t4" firstAttribute="centerX" secondItem="HU7-Ac-TLL" secondAttribute="centerX" id="dbB-3y-5Ev"/>
+                            <constraint firstItem="HIg-AY-HgI" firstAttribute="trailing" secondItem="QEO-oF-VWa" secondAttribute="trailing" id="j1t-sU-zII"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PMm-AC-o9B" secondAttribute="bottom" constant="8" symbolic="YES" id="lIN-Rp-cNh"/>
+                            <constraint firstAttribute="trailing" secondItem="6Ww-eT-mdv" secondAttribute="trailing" id="q6c-VK-mZT"/>
+                            <constraint firstItem="bqB-SQ-kuf" firstAttribute="leading" secondItem="HU7-Ac-TLL" secondAttribute="leading" id="uEo-Er-jAn"/>
+                            <constraint firstItem="vLx-1a-PnV" firstAttribute="top" secondItem="bqB-SQ-kuf" secondAttribute="bottom" constant="8" symbolic="YES" id="xNV-WU-FaY"/>
+                            <constraint firstItem="QEO-oF-VWa" firstAttribute="leading" secondItem="vLx-1a-PnV" secondAttribute="leading" id="zGf-Hz-x8V"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="adBanner" destination="PMm-AC-o9B" id="gQs-f4-uzc"/>
+                        <outlet property="tipDisplay" destination="xKI-g9-DZv" id="laW-0a-p74"/>
+                        <outlet property="tipPercentage" destination="QEO-oF-VWa" id="Rp3-vk-yGk"/>
+                        <outlet property="totalPrice" destination="bqB-SQ-kuf" id="4oi-RT-2h4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-407.19999999999999" y="120.98950524737631"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="calcBack.jpeg" width="1536" height="2048"/>
+    </resources>
 </document>
